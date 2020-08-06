@@ -1,0 +1,249 @@
+/* Universal */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+	color: #222;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/* Reusable */
+.container {
+	width: 100%;
+	max-width: 90rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.section-heading {
+	margin-bottom: 7rem;;
+}
+
+.section-heading h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #4CB5F5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-heading h2::before,
+.section-heading h2::after {
+	content: "";
+	border-top: 1px solid #4CB5F5;
+	width: 7rem;
+}
+
+.section-heading h2::before {
+	margin-right: 1.8rem;
+}
+
+.section-heading h2::after {
+	margin-left: 1.8rem;
+}
+
+/* Header */
+header#home {
+	width: 100%;
+	max-width: 120rem;
+	height: 15rem;
+	margin: 0 8.3rem;
+}
+
+.header-title {
+	padding-top: 4.7rem;
+}
+
+.clinic-name {
+	display: inline-block;
+}
+
+.clinic-name h3 {
+	font-size: 1.3rem;
+}
+
+.clinic-name h1 {
+	font-size: 2.3rem;
+	margin: 0;
+}
+
+.clinic-access {
+	display: inline-block;
+	margin-left: 2rem;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fff;
+	background-color: #4CB5F5;
+	border-radius: 1.1rem; 
+}
+
+.header-info {
+	float: right;
+}
+
+.header-info p {
+	position: absolute;
+	top: 2rem;
+	right: 30rem;
+	font-size: 1.05rem;
+}
+
+.header-buttons {
+	position: absolute;
+	right: 8.3rem;
+	top: 1rem;
+}
+
+.header-buttons a {
+	display: block;
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.reservation {
+	background-color: #4CB5F5; 
+	color: #fff;
+	width: 20rem;
+	height: 3.4rem;
+	padding: 1rem .5rem 1rem 3.5rem;
+	border-radius: 2.5rem;
+}
+
+.reservation .fa-chevron-circle-right {
+	margin-left: 3rem;
+}
+
+.reservation .fa-desktop, .phone-number .fa-phone-alt {
+	margin-right: 0.5rem;
+}
+
+.phone-number {
+	padding-top: 1rem;
+	padding-left: 3.5rem;
+	color: #222;
+}
+
+.phone-number .fa-phone-alt {
+	color: #4CB5F5;
+}
+
+.header-menu {
+	float: right;
+	position: absolute;
+	right: 8.3rem;
+	top: 12rem;
+}
+
+.header-menu ul {
+	list-style: none;
+}
+
+.header-menu ul li {
+	float: left;
+	border-right: 1px solid #222;
+	transform: skewX(150deg);
+}
+
+.header-menu ul li:last-child {
+	border: none;
+}
+
+.header-menu ul li a {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #222;
+	text-decoration: none;
+	margin: 0 1.8rem;
+	display: block;
+	transform: skewX(-150deg);
+}
+
+/* MainVisual */
+.main-visual img {
+	width: 100%;
+}
+
+/* Anti-Corona */
+.anti-corona {
+	margin-top: 5rem;
+	width: 100%;
+	height: 15rem;
+	background-color: #D5EAF8;
+	text-align: center;
+}
+
+.anti-corona h3 {
+	font-size: 1.8rem;
+	padding: 4rem 0;
+}
+
+.anti-corona p, .anti-corona a {
+	display: inline;
+}
+
+/* Concept */
+.concept {
+	margin-top: 8rem;
+}
+
+.concept-odd, .concept-even {
+	position: relative;
+}
+
+.concept-odd .elipse, .concept-even .elipse {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #4CB5F5;
+	width: 6rem;
+	height: 6rem;
+	padding: 1rem;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.concept-odd h3, .concept-even h3 {
+	font-size: 1.7rem;
+	display: inline;
+}
+
+.concept-odd p, .concept-even p {
+	font-size: 1.4rem;
+	color: #fff;
+	line-height: 2.5rem;
+	background-color: #4CB5F5;
+	padding: 4rem 7rem;
+	width: 50rem;
+	border-radius: 2rem;
+}
+
+.concept-odd h3 {
+	position: relative;
+	top: -1rem;
+	left: 1rem;
+}
+
+.concept-odd p {
+	position: relative;
+	top: -2rem;
+	left: 3.5rem;
+}
+
+.concept-odd img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
