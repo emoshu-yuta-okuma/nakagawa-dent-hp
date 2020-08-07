@@ -13,7 +13,13 @@ html {
 
 body {
 	width: 100%;
-	height: 100%;
+  height: 100%;
+  color: #222;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
 }
 
 /* Reusable */
@@ -66,14 +72,20 @@ header#home {
 }
 
 .clinic-name {
-	display: inline-block;
+  display: inline-block;
+}
+
+.clinic-name a {
+  text-decoration: none;
 }
 
 .clinic-name h3 {
-	font-size: 1.3rem;
+  color: #222;
+  font-size: 1.3rem;
 }
 
 .clinic-name h1 {
+  color: #222;
 	font-size: 2.3rem;
 	margin: 0;
 }
@@ -97,7 +109,8 @@ header#home {
 	position: absolute;
 	top: 2rem;
 	right: 30rem;
-	font-size: 1.05rem;
+  font-size: 1.05rem;
+  line-height: 1rem;
 }
 
 .header-buttons {
@@ -119,7 +132,16 @@ header#home {
 	width: 20rem;
 	height: 3.4rem;
 	padding: 1rem .5rem 1rem 3.5rem;
-	border-radius: 2.5rem;
+  border-radius: 2.5rem;
+  transition: all 500ms;
+}
+
+.reservation:hover {
+  background-color: #317199;
+}
+
+.transition:hover {
+  background-color: #317199;
 }
 
 .reservation .fa-chevron-circle-right {
@@ -140,6 +162,7 @@ header#home {
 	color: #4CB5F5;
 }
 
+/* Header-メニュー */
 .header-menu {
 	float: right;
 	position: absolute;
@@ -168,7 +191,12 @@ header#home {
 	text-decoration: none;
 	margin: 0 1.8rem;
 	display: block;
-	transform: skewX(-150deg);
+  transform: skewX(-150deg);
+  transition: all 500ms;
+}
+
+.header-menu ul li a:hover {
+  color: #4CB5F5;
 }
 
 /* MainVisual */
@@ -187,20 +215,29 @@ header#home {
 
 .anti-corona h3 {
 	font-size: 1.8rem;
-	padding: 4rem 0;
+	padding: 4rem 0 3rem 0;
 }
 
 .anti-corona p, .anti-corona a {
 	display: inline;
 }
 
+.anti-corona a {
+  font-size: 1.4rem;
+  color: #317199;
+}
+
 /* Concept */
+/* Concept-中川歯科クリニックのコンセプト */
 .concept {
 	margin-top: 8rem;
 }
 
 .concept-odd, .concept-even {
-	position: relative;
+  position: relative;
+  height: 27rem;
+  width: 100%;
+  margin-bottom: 8rem;
 }
 
 .concept-odd .elipse, .concept-even .elipse {
@@ -231,15 +268,15 @@ header#home {
 }
 
 .concept-odd h3 {
-	position: relative;
-	top: -1rem;
-	left: 1rem;
+	position: absolute;
+	top: 1.8rem;
+	left: 8rem;
 }
 
 .concept-odd p {
-	position: relative;
-	top: -2rem;
-	left: 3.5rem;
+	position: absolute;
+	top: 4rem;
+	left: 4rem;
 }
 
 .concept-odd img {
@@ -247,3 +284,275 @@ header#home {
 	top: 0;
 	right: 0;
 }
+
+.concept-even .elipse {
+  position: absolute;
+  right: 0;
+}
+
+.concept-even h3 {
+  position: absolute;
+  top: 1.8rem;
+  right: 8rem;
+}
+
+.concept-even p {
+  z-index: -100;
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+/* Concept-プラスシェイプ */
+.plus {
+  margin: 0 auto;
+  width: 7rem;
+  height: 4.1rem;
+  margin-bottom: 5rem;
+}
+
+.plus-height, .plus-width {
+  position: absolute;
+  width: 7rem;
+  height: 1.2rem;
+  background-color: #4CB5F5;
+}
+
+.plus-height {
+  transform: rotate(90deg);
+}
+
+.concept-5 h3 {
+  top: 1rem;
+  left: 15rem;
+}
+
+.concept-5 h3 span {
+  color: #4CB5F5;
+  font-size: 2rem;
+}
+
+.concept-5 p {
+  left: 0;
+}
+
+.concept-5 img {
+  right: 0;
+  top: 5rem;
+}
+
+/* Concept-歯を削らない治療を心がけています */
+.concept-explanation {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.concept-explanation h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.concept-explanation p {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  width: 60rem;
+}
+
+.concept-explanation img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+
+/* Concept-水と光による歯科治療 */
+.concept-treatment {
+  margin-bottom: 5rem;
+  height: 52rem;
+  border: 3px solid #317199;
+  border-radius: 2.5rem;
+}
+
+.concept-treatment-wrap {
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.concept-treatment .concept-treatment-title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.concept-treatment .elipse {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.concept-treatment .elipse h2 {
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.concept-treatment .elipse h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.concept-treatment .water {
+  background-color: #D5EAF8;
+}
+
+.concept-treatment .water h3 {
+  color: #317199;
+}
+
+.concept-treatment .light {
+  background-color: #FDEADA;
+  float: right;
+}
+
+.concept-treatment .light h3 {
+  color: #F69747;
+}
+
+/* Concept-水と光による歯科治療-Xシェイプ */
+.multiply {
+  transform: rotate(45deg);
+  display: inline-block;
+  position: relative;
+  top: -8rem;
+  left: 8rem;
+}
+
+.multiply-height, .multiply-width {
+  position: absolute;
+  width: 7rem;
+  height: 1.2rem;
+  background-color: #4CB5F5;
+}
+
+.multiply-height {
+  transform: rotate(90deg);
+}
+
+.concept-treatment p {
+  margin-top: 2rem;
+}
+
+.concept-treatment a {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #317199;
+  padding: 1rem;
+  margin: 2rem 0 2.5rem 0;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  width: 60rem;
+  height: 4rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.concept-treatment a:hover {
+  background-color: #4CB5F5;
+}
+
+.concept-treatment a i {
+  position: absolute;
+  right: 0;
+  top: 1.2rem;
+  right: 2.5rem;
+}
+
+/* Banner-かかりつけ歯科医機能強化型歯科診療所 */
+.banner {
+  background-color: #D5EAF8;
+  width: 100%;
+  height: 35rem;
+  position: relative;
+  margin-bottom: 7rem;
+  z-index: -100;
+}
+
+.banner h2 {
+  font-size: 1.6rem;
+  padding-top: 4rem;
+  margin-left: 8.3rem;
+  margin-bottom: 4rem;
+}
+
+.banner h2 span {
+  color: #317199;
+  font-size: 2rem;
+}
+
+.banner p {
+  width: 70rem;
+  margin-left: 8.3rem;
+  font-weight: bold;
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+}
+
+/* Guide */
+.guide {
+  margin-bottom: 8rem;
+}
+
+.treatment-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8.5rem;
+}
+
+.treatment-menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  width: 14em;
+  height: 14rem;
+  line-height: 14rem;
+  display: block;
+  border: 5px solid #4CB5F5;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.icon-container img {
+  width: 7.7rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.treatment-menu .menu h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Information */
