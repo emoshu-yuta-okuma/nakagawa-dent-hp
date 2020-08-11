@@ -22,6 +22,10 @@ p {
   line-height: 2.5rem;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #222;
+}
+
 /* Reusable */
 .container {
 	width: 100%;
@@ -59,6 +63,32 @@ p {
 	margin-left: 1.8rem;
 }
 
+.btn {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #317199;
+  padding: 1.1rem;
+  display: block;
+  text-decoration: none;
+  width: 60rem;
+  height: 4rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.btn:hover {
+  background-color: #4CB5F5;
+}
+
+.btn i.fa-chevron-circle-right {
+  position: absolute;
+  right: 0;
+  top: 1.3rem;
+  right: 2.5rem;
+}
+
 /* Header */
 header#home {
 	width: 100%;
@@ -87,18 +117,23 @@ header#home {
 .clinic-name h1 {
   color: #222;
 	font-size: 2.3rem;
-	margin: 0;
+  margin: 0;
+  margin-top: 1rem;
 }
 
 .clinic-access {
 	display: inline-block;
 	margin-left: 2rem;
-	padding: 1rem 2rem;
-	font-size: 1.5rem;
-	text-align: center;
-	color: #fff;
 	background-color: #4CB5F5;
 	border-radius: 1.1rem; 
+}
+
+.clinic-access p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 2rem;
 }
 
 .header-info {
@@ -449,25 +484,9 @@ header#home {
   margin-top: 2rem;
 }
 
-.concept-treatment a {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #fff;
-  background-color: #317199;
-  padding: 1rem;
+.btn {
   margin: 2rem 0 2.5rem 0;
   position: relative;
-  display: block;
-  text-decoration: none;
-  width: 60rem;
-  height: 4rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 500ms;
-}
-
-.concept-treatment a:hover {
-  background-color: #4CB5F5;
 }
 
 .concept-treatment a i {
@@ -528,6 +547,7 @@ header#home {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .icon-container {
@@ -556,3 +576,210 @@ header#home {
 }
 
 /* Information */
+.information {
+  margin-bottom: 7rem;
+}
+
+.info {
+  margin-bottom: 5rem;
+  padding-left: 20rem;
+  padding-bottom: 1rem;
+  width: 90rem;
+  border-bottom: 1px solid #317199;
+}
+
+.info a {
+  font-size: 1.4rem;
+  color: #317199;
+  text-decoration: none;
+}
+
+.info a span {
+  color: #222;
+  margin-left: 10rem;
+}
+
+.information .btn {
+  margin: 0 auto;
+}
+
+/* Access & Hour */
+.access {
+  margin-bottom: 10rem;
+}
+
+.access-hour {
+  margin: 0 auto;
+  width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.access-info {
+  width: 60rem;
+  position: relative;
+}
+
+.clinic-left {
+  float: left;
+  margin-bottom: 3rem;
+}
+
+.clinic-left h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.clinic-left h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1rem 0 0 0;
+}
+
+.clinic-right {
+  float: right;
+  margin-bottom: 3rem;
+}
+
+.clinic-right p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.clinic-right a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}
+
+.clinic-right a i {
+  margin-right: 0.8rem;
+  color: #4CB5F5
+}
+
+/* Access & Hour - 診療時間表 */
+.access table {
+  width: 60rem;
+  height: 12rem;
+  border-collapse: collapse;
+  border: 1px solid #317199;
+}
+
+.access table th {
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #4CB5F5;
+  height: 4rem;
+}
+
+.access table td {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #317199;
+  text-align: center;
+  width: 10%;
+  padding: 0;
+}
+
+.access table td.filled-circle {
+  padding: 0;
+  padding-top: 0.4rem;
+  font-size: 2.3rem;
+}
+
+.access table td.triangle {
+  font-size: 2.3rem;
+  padding: 0;
+  padding-top: 0.4rem;
+  color: #4CB5F5;
+}
+
+.special-hour {
+  display: flex;
+}
+
+.special-hour p .filled-circle, .special-hour p .triangle {
+  font-size: 2.3rem;
+}
+
+.special-hour p .filled-circle {
+  color: #317199;
+}
+
+.special-hour p .triangle {
+  color: #4CB5F5;
+}
+
+.special-hour p {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.hour .btn {
+  background-color: #4CB5F5;
+  margin-bottom: 4rem;
+}
+
+.hour .btn:hover {
+  background-color: #317199;
+}
+
+.hour .btn .fa-desktop {
+  margin-right: 1rem;
+}
+
+/* Access & Hour - 最寄駅から */
+.trans {
+  float: left;
+}
+
+.trans h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4CB5F5;
+  margin-bottom: 1rem;
+}
+
+.trans h3 i {
+  margin-right: 1rem;
+}
+
+.trans .trans-wrap {
+  background-color: #D5EAF8;
+}
+
+.trans .trans-wrap p {
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  padding: 1.5rem;
+  height: 33.8rem;
+}
+
+.map iframe {
+  float: right;
+}
+
+.btn-access {
+  float: right;
+  width: 57rem;
+  margin-top: 3rem;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 37rem;
+  background-color: #D5EAF8;
+}
+
+.footer-wrap {
+  width: 120rem;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
