@@ -732,16 +732,11 @@ header#home {
   margin-top: 1rem;
 }
 
-.hour .btn {
-  background-color: #4CB5F5;
+.access-hour .btn {
   margin-bottom: 4rem;
 }
 
-.hour .btn:hover {
-  background-color: #317199;
-}
-
-.hour .btn .fa-desktop {
+.access-hour .btn .fa-desktop {
   margin-right: 1rem;
 }
 

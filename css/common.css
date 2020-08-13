@@ -1,0 +1,431 @@
+/* Universal */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+	color: #222;
+}
+
+body {
+	width: 100%;
+  height: 100%;
+  color: #222;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+a {
+  font-size: 1.4rem;
+  color: #222;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #222;
+}
+
+/* Reusable */
+section {
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+section.last {
+  margin-bottom: 0;
+}
+
+section.distinction {
+  background-color: #F6F6F6;
+}
+
+section.distinction .container {
+  padding: 5rem 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 90rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.btn {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #317199;
+  padding: 1.1rem;
+  display: block;
+  text-decoration: none;
+  width: 60rem;
+  height: 4rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 500ms;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: #4CB5F5;
+}
+
+.btn i.fa-chevron-circle-right {
+  position: absolute;
+  right: 0;
+  top: 1.3rem;
+  right: 2.5rem;
+}
+
+/* Header */
+header#home {
+	width: 100%;
+	max-width: 120rem;
+	height: 15rem;
+	margin: 0 8.3rem;
+}
+
+.header-title {
+	padding-top: 4.7rem;
+}
+
+.clinic-name {
+  display: inline-block;
+}
+
+.clinic-name a {
+  text-decoration: none;
+}
+
+.clinic-name h3 {
+  color: #222;
+  font-size: 1.3rem;
+}
+
+.clinic-name h1 {
+  color: #222;
+	font-size: 2.3rem;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.clinic-access {
+	display: inline-block;
+	margin-left: 2rem;
+	background-color: #4CB5F5;
+	border-radius: 1.1rem; 
+}
+
+.clinic-access p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 2rem;
+}
+
+.header-info {
+	float: right;
+}
+
+.header-info p {
+	position: absolute;
+	top: 2rem;
+	right: 30rem;
+  font-size: 1.05rem;
+  line-height: 1rem;
+}
+
+.header-buttons {
+	position: absolute;
+	right: 8.3rem;
+	top: 1rem;
+}
+
+.header-buttons a {
+	display: block;
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.reservation {
+	background-color: #4CB5F5; 
+	color: #fff;
+	width: 20rem;
+	height: 3.4rem;
+	padding: 1rem .5rem 1rem 3.5rem;
+  border-radius: 2.5rem;
+  transition: all 500ms;
+}
+
+.reservation:hover {
+  background-color: #317199;
+}
+
+.transition:hover {
+  background-color: #317199;
+}
+
+.reservation .fa-chevron-circle-right {
+	margin-left: 3rem;
+}
+
+.reservation .fa-desktop, .phone-number .fa-phone-alt {
+	margin-right: 0.5rem;
+}
+
+.phone-number {
+	padding-top: 1rem;
+	padding-left: 3.5rem;
+	color: #222;
+}
+
+.phone-number .fa-phone-alt {
+	color: #4CB5F5;
+}
+
+/* Header - メニュー */
+.header-menu {
+	float: right;
+	position: absolute;
+	right: 8.3rem;
+	top: 12rem;
+}
+
+.header-menu ul {
+	list-style: none;
+}
+
+.header-menu ul li {
+	float: left;
+	border-right: 1px solid #222;
+	transform: skewX(150deg);
+}
+
+.header-menu ul li:last-child {
+	border: none;
+}
+
+.header-menu ul li a {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #222;
+	text-decoration: none;
+	margin: 0 1.8rem;
+	display: block;
+  transform: skewX(-150deg);
+  transition: all 500ms;
+}
+
+.header-menu ul li a:hover {
+  color: #4CB5F5;
+}
+
+/* Title Banner - タイトルバナー(共通) */
+.title-banner {
+  position: relative;
+}
+
+.page-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 18.3rem;
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.page-title .page-title-icon {
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-title h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3rem;
+}
+
+.title-banner .title-banner-img {
+  width: 100%;
+}
+
+/* Page Access - ページへのアクセス順路 */
+.page-access {
+  width: 100%;
+  height: 13rem;
+  position: relative;
+}
+
+.page-access p, .page-access p a {
+  font-size: 1.2rem;
+}
+
+.page-access p {
+  position: absolute;
+  top: 0.5rem;
+  left: 9rem;
+}
+
+/* Section Title */
+.section-title-wrapper {
+  margin: 0 auto 5rem;
+  width: 81.5rem;
+  height: 7.5rem;
+  position: relative;
+}
+
+.section-title {
+  width: 80rem;
+  height: 6rem;
+  line-height: 6rem;
+  position: relative;
+  background-color: #4CB5F5;
+  border-radius: 2rem;
+  z-index: 10;
+}
+
+.section-title-shadow {
+  width: 80rem;
+  height: 6rem;
+  background-color: #D5EAF8;
+  border-radius: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 1;
+}
+
+.section-title h2 {
+  color: #fff;
+  font-size: 1.7rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Clinic Info */
+section.clinic-info {
+  margin-top: 15rem;
+}
+
+.clinic-info-left {
+  float: left;
+}
+
+.clinic-info-left h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.clinic-info-left h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1rem 0 2rem 0;
+}
+
+.clinic-info-left p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.clinic-info-left a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: block;
+}
+
+.clinic-info-left a i {
+  margin-right: 0.8rem;
+  color: #4CB5F5;
+}
+
+.clinic-info-right {
+  float: right;
+}
+
+.clinic-info-wrapper {
+  overflow: hidden;
+}
+
+/* Access & Hour - 診療時間表 */
+.clinic-info-right table {
+  width: 60rem;
+  height: 12rem;
+  border-collapse: collapse;
+  border: 1px solid #317199;
+}
+
+.clinic-info-right table th {
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #4CB5F5;
+  height: 4rem;
+}
+
+.clinic-info-right table td {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #317199;
+  text-align: center;
+  width: 10%;
+  padding: 0;
+}
+
+.clinic-info-right table td.filled-circle {
+  padding: 0;
+  padding-top: 0.4rem;
+  font-size: 2.3rem;
+}
+
+.clinic-info-right table td.triangle {
+  font-size: 2.3rem;
+  padding: 0;
+  padding-top: 0.4rem;
+  color: #4CB5F5;
+}
+
+.special-hour {
+  display: flex;
+}
+
+.special-hour p .filled-circle, .special-hour p .triangle {
+  font-size: 2.3rem;
+}
+
+.special-hour p .filled-circle {
+  color: #317199;
+}
+
+.special-hour p .triangle {
+  color: #4CB5F5;
+}
+
+.special-hour p {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btn-reserve {
+  margin: 4rem auto 0;
+}
+
+.btn-reserve i.fa-desktop {
+  margin-right: 1rem;
+}
+
+/* Footer */
