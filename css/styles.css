@@ -870,3 +870,21 @@ footer small {
   left: 0;
   right: 0;
 }
+
+/* Page Top */
+.page-top-container {
+  position: relative;
+  bottom: -6rem;
+  z-index: 100;
+}
+
+.page-top-container a.page-top {
+  position: fixed;
+  right: 5rem;
+  bottom: 3rem;
+}
+
+.page-top-container a.page-top img {
+  width: 5rem;
+  height: 5rem;
+}
