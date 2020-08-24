@@ -1,0 +1,122 @@
+/* Access - Akihabara - アクセス秋葉原 */
+.access-akihabara img.access-top {
+  display: block;
+  width: 60rem;
+  margin: 0 auto 2.5rem;
+}
+
+.access-akihabara p.access-description {
+  margin-bottom: 4rem;
+}
+
+.access-akihabara h3, .access-other h3 {
+  color: #4CB5F5;
+  margin-bottom: 2.5rem
+}
+
+.route {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.route .route-wrapper {
+  width: 45rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.route .route-wrapper p {
+  width: 90%;
+}
+
+.route .route-wrapper img {
+  width: 90%;
+}
+
+.route .route-wrapper p span {
+  color: #4CB5F5;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Access - other Akihabara */
+.access-other iframe {
+  display: block;
+  margin: 3rem auto 0;
+}
+
+/* Media Query */
+@media screen and (max-width: 950px) {
+
+  /* Access - Akihabara - アクセス秋葉原 */
+  .access-akihabara img.access-top {
+    width: 50rem;
+  }
+
+  .route .route-wrapper {
+    width: 36rem;
+  }
+
+  .route .route-wrapper img, .route .route-wrapper p {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Access - Akihabara - アクセス秋葉原 */
+  .route .route-wrapper {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Access Akihabara - アクセス秋葉原 */
+  .route {
+    grid-template-columns: 1fr;
+  }
+
+  .route .route-wrapper {
+    width: 100%;
+  }
+
+  .route .route-wrapper img, .route .route-wrapper p {
+    width: 40rem;
+  }
+  
+  /* Access - other Akihabara */
+  .access-other iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Access - Akihabara - アクセス秋葉原 */
+  .access-akihabara img.access-top {
+    width: 90%;
+  }
+
+  /* Access - other Akihabara */
+  .access-other iframe {
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  /* Access - Akihabara - アクセス秋葉原 */
+  .route .route-wrapper img, .route .route-wrapper p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Access - Akihabara - アクセス秋葉原 */
+  .route .route-wrapper {
+    height: 30rem;
+  }
+}

@@ -1,26 +1,27 @@
 $(document).ready(function () {
-  
-    $(window).on("scroll", function() {
-      if ($(this).scrollTop() > 100) {
-        $(".page-top").fadeIn("slow");
-      } else {
-        $(".page-top").fadeOut("slow");
-      }
+  $(".page-top").hide();
 
-    scrollHeight = $(document).height();
-    scrollPosition = $(window).height() + $(window).scrollTop();
-    footHeight = $("footer").innerHeight();
-
-    if (scrollHeight - scrollPosition <= footHeight - 30) {
-      $(".page-top").css({
-        "position": "absolute",
-      });
+  $(window).on("scroll", function() {
+    if ($(this).scrollTop() > 100) {
+      $(".page-top").fadeIn("slow");
     } else {
-      $(".page-top").css({
-        "position": "fixed",
-      });
+      $(".page-top").fadeOut("slow");
     }
+
+  scrollHeight = $(document).height();
+  scrollPosition = $(window).height() + $(window).scrollTop();
+  footHeight = $("footer").innerHeight();
+
+  if (scrollHeight - scrollPosition <= footHeight - 30) {
+    $(".page-top").css({
+      "position": "absolute",
     });
+  } else {
+    $(".page-top").css({
+      "position": "fixed",
+    });
+  }
+  });
   
   // スムーススクロール設定
   $(".page-top").click(function () {

@@ -1,0 +1,102 @@
+/* Treatment Menu */
+.treatment-menu {
+  margin-top: 2rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+  row-gap: 8rem;
+}
+
+.menu .menu-wrapper {
+  width: 40rem;
+  height: 49rem;
+  position: relative;
+}
+
+.menu .menu-wrapper .icon-container {
+  width: 12rem;
+  height: 12rem;
+  line-height: 12rem;
+  display: block;
+  position: relative;
+  border: 6px solid #4CB5F5;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.menu .menu-wrapper .icon-container img {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.menu .menu-wrapper .menu-container {
+  width: 37rem;
+  height: 40rem;
+  padding: 2rem;
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  border: 2px solid #317199;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container h3, .menu-container h4, .menu-container p {
+  margin-bottom: 2rem;
+}
+
+.menu-container h3 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid #4CB5F5;
+  padding-bottom: 2px;
+  margin-bottom: 2rem;
+}
+
+.menu-container h4 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.menu-container h4.h4-space {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.menu-container .btn {
+  width: 32rem;
+  background-color: #4CB5F5;
+  cursor: pointer;
+}
+
+.menu-container .btn:hover {
+  background-color: #317199;
+}
+
+.menu-container .menu-btn-double {
+  margin: 0 0 2rem;
+}
+
+.menu-container .menu-btn-margin-3 {
+  margin-top: 3.5rem;
+}
+
+.menu-container .menu-btn-margin-2 {
+  margin-top: 2rem;
+}
+
+.menu-container .menu-btn-margin-1 {
+  margin-top: 1rem;
+}
