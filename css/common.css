@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5, h6, p, a {
   color: #222;
 }
@@ -43,7 +47,7 @@ section.last {
 }
 
 section.distinction {
-  background-color: #F6F6F6;
+  background-color: #F1F1F1;
 }
 
 section.distinction .container {
@@ -85,15 +89,19 @@ section.distinction .container {
   right: 2.5rem;
 }
 
+.article {
+  background-color: #D5EAF8;
+  border-radius: 2rem;
+}
+
 /* Header */
 header#home {
 	width: 100%;
-	max-width: 120rem;
 	height: 15rem;
-	margin: 0 8.3rem;
 }
 
 .header-title {
+  margin-left: 8.3rem;
 	padding-top: 4.7rem;
 }
 
@@ -230,6 +238,10 @@ header#home {
   color: #4CB5F5;
 }
 
+.header-menu-sm {
+  display: none;
+}
+
 /* Title Banner - タイトルバナー(共通) */
 .title-banner {
   position: relative;
@@ -240,8 +252,8 @@ header#home {
   top: 50%;
   transform: translateY(-50%);
   left: 18.3rem;
-  height: 6rem;
-  line-height: 6rem;
+  height: inherit;
+  line-height: inherit;
 }
 
 .page-title .page-title-icon {
@@ -262,6 +274,10 @@ header#home {
   width: 100%;
 }
 
+.title-banner img.sp-title-banner {
+  display: none;
+}
+
 /* Page Access - ページへのアクセス順路 */
 .page-access {
   width: 100%;
@@ -279,18 +295,16 @@ header#home {
   left: 9rem;
 }
 
-/* Section Title */
+/* Section Title - セクションタイトル */
 .section-title-wrapper {
   margin: 0 auto 5rem;
-  width: 81.5rem;
-  height: 7.5rem;
+  width: 80%;
   position: relative;
 }
 
 .section-title {
-  width: 80rem;
-  height: 6rem;
-  line-height: 6rem;
+  width: 100%;
+  padding: 2rem 0;
   position: relative;
   background-color: #4CB5F5;
   border-radius: 2rem;
@@ -298,8 +312,8 @@ header#home {
 }
 
 .section-title-shadow {
-  width: 80rem;
-  height: 6rem;
+  width: 100%;
+  padding: 2rem 0;
   background-color: #D5EAF8;
   border-radius: 2rem;
   position: absolute;
@@ -315,13 +329,26 @@ header#home {
   vertical-align: middle;
 }
 
-/* Clinic Info */
+.section-title-shadow h2 {
+  color: transparent;
+  font-size: 1.7rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Clinic Info - クリニック情報 */
 section.clinic-info {
   margin-top: 15rem;
 }
 
+.clinic-info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.5rem;
+}
+
 .clinic-info-left {
-  float: left;
+  text-align: left;
 }
 
 .clinic-info-left h3 {
@@ -350,14 +377,6 @@ section.clinic-info {
 .clinic-info-left a i {
   margin-right: 0.8rem;
   color: #4CB5F5;
-}
-
-.clinic-info-right {
-  float: right;
-}
-
-.clinic-info-wrapper {
-  overflow: hidden;
 }
 
 /* Access & Hour - 診療時間表 */
@@ -397,27 +416,28 @@ section.clinic-info {
   color: #4CB5F5;
 }
 
-.special-hour {
-  display: flex;
-}
-
-.special-hour p .filled-circle, .special-hour p .triangle {
+.hour-info p .filled-circle, .hour-info p .triangle {
   font-size: 2.3rem;
 }
 
-.special-hour p .filled-circle {
+.hour-info p .filled-circle {
   color: #317199;
 }
 
-.special-hour p .triangle {
+.hour-info p .triangle {
   color: #4CB5F5;
 }
 
-.special-hour p {
+.hour-info p {
+  font-size: 1.4rem;
   font-weight: bold;
   display: flex;
   align-items: center;
   margin-top: 1rem;
+}
+
+.special-hour-sp {
+  display: none;
 }
 
 .btn-reserve {
@@ -437,44 +457,62 @@ footer {
 }
 
 .footer-wrap {
-  width: 120rem;
+  width: 90%;
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  column-gap: 5rem;
 }
 
 .footer-grid {
   margin-top: 5rem;
 }
 
-.footer-menu ul {
+.footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer ul {
   list-style: none;
 }
 
-.footer-menu ul li {
+footer ul li {
   padding-bottom: 1rem;
 }
 
-.footer-menu ul li:last-child {
+footer ul li:last-child {
   padding-bottom: 0;
 }
 
-.footer-menu ul li a {
+footer ul li a {
   font-size: 1.1rem;
   text-decoration: none;
 }
 
-.footer-menu ul li:hover a {
+footer ul li:hover a {
   color: #4CB5F5;
 }
 
-.footer-menu ul li a i {
+footer ul li a i {
   color: #4CB5F5;
   margin-right: 0.5rem;
 }
 
-.footer-menu ul li:hover a i {
+footer ul li:hover a i {
   color: #fff;
+}
+
+footer .menu-title {
+  border-bottom: 2px solid #317199;
+  padding-bottom: 3px;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .menu-title h4 {
+  font-size: 1.3rem;
+  color: #317199;
 }
 
 .footer-grid h5 {
@@ -522,11 +560,11 @@ footer small {
   right: 0;
 }
 
-/* Page Top */
+/* Page Top - ページトップ */
 .page-top-container {
   position: relative;
   bottom: -6rem;
-  z-index: 100;
+  z-index: 50;
 }
 
 .page-top-container a.page-top {
