@@ -444,8 +444,13 @@
   }
 
   /* Page Top - ページトップ */
-  .page-top-container {
-    display: none;
+  .page-top-container a.page-top {
+    right: 2rem;
+  }
+  
+  .page-top-container a.page-top img {
+    width: 4rem;
+    height: 4rem;
   }
 
   /* Footer */
