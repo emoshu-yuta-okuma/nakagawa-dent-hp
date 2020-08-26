@@ -1,4 +1,4 @@
-/* Treatment Menu */
+/* Treatment Menu - お悩み・症状別診療メニュー */
 .treatment-menu {
   margin-top: 2rem;
 }
@@ -6,12 +6,12 @@
 .menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10rem;
-  row-gap: 8rem;
+  column-gap: 10%;
+  row-gap: 7rem;
 }
 
 .menu .menu-wrapper {
-  width: 40rem;
+  width: 100%;
   height: 49rem;
   position: relative;
 }
@@ -40,8 +40,7 @@
 }
 
 .menu .menu-wrapper .menu-container {
-  width: 37rem;
-  height: 40rem;
+  width: 90%;
   padding: 2rem;
   position: absolute;
   top: 6rem;
@@ -99,4 +98,96 @@
 
 .menu-container .menu-btn-margin-1 {
   margin-top: 1rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 950px) {
+
+  /* Treatment Menu - お悩み・症状別診療メニュー */
+  .menu {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .menu .menu-wrapper {
+    height: 50rem;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu .menu-wrapper .menu-container {
+    left: 0;
+    position: relative;
+    padding-top: 8rem;
+  }
+
+  .menu .menu-wrapper .icon-container {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Treatment Menu - お悩み・症状別診療メニュー */
+  .menu .menu-wrapper {
+    width: 90%;
+  }
+
+  .menu-container .btn {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Treatment Menu - お悩み・症状別診療メニュー */
+  .menu .menu-wrapper {
+    width: 100%;
+  }
+
+  .menu-container .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  /* Treatment Menu - お悩み・症状別診療メニュー */
+  .long-text {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .long-text i {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Treatment Menu - お悩み・症状別診療メニュー */
+  .menu .menu-wrapper {
+    height: 52rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  /* Treatment Menu - お悩み・症状別診療メニュー */
+  .long-text {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .long-text i.fa-chevron-circle-right {
+    font-size: 1.5rem;
+    right: 1rem;
+  }
 }
