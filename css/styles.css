@@ -1,40 +1,5 @@
-/* Universal */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 10px;
-	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
-	color: #222;
-}
-
-body {
-	width: 100%;
-  height: 100%;
-  color: #222;
-}
-
-p {
-  font-size: 1.4rem;
-  line-height: 2.5rem;
-}
-
-h1, h2, h3, h4, h5, h6, p, a {
-  color: #222;
-}
 
 /* Reusable */
-.container {
-	width: 100%;
-	max-width: 90rem;
-	height: 100%;
-	margin: 0 auto;
-	position: relative;
-}
-
 .section-heading {
 	margin-bottom: 7rem;;
 }
@@ -63,180 +28,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 	margin-left: 1.8rem;
 }
 
-.btn {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #fff;
-  background-color: #317199;
-  padding: 1.1rem;
-  display: block;
-  text-decoration: none;
-  width: 60rem;
-  height: 4rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 500ms;
-}
-
-.btn:hover {
-  background-color: #4CB5F5;
-}
-
-.btn i.fa-chevron-circle-right {
-  position: absolute;
-  right: 0;
-  top: 1.3rem;
-  right: 2.5rem;
-}
-
-/* Header */
-header#home {
-	width: 100%;
-	max-width: 120rem;
-	height: 15rem;
-	margin: 0 8.3rem;
-}
-
-.header-title {
-	padding-top: 4.7rem;
-}
-
-.clinic-name {
-  display: inline-block;
-}
-
-.clinic-name a {
-  text-decoration: none;
-}
-
-.clinic-name h3 {
-  color: #222;
-  font-size: 1.3rem;
-}
-
-.clinic-name h1 {
-  color: #222;
-	font-size: 2.3rem;
-  margin: 0;
-  margin-top: 1rem;
-}
-
-.clinic-access {
-	display: inline-block;
-	margin-left: 2rem;
-	background-color: #4CB5F5;
-	border-radius: 1.1rem; 
-}
-
-.clinic-access p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem 2rem;
-}
-
-.header-info {
-	float: right;
-}
-
-.header-info p {
-	position: absolute;
-	top: 2rem;
-	right: 30rem;
-  font-size: 1.05rem;
-  line-height: 1rem;
-}
-
-.header-buttons {
-	position: absolute;
-	right: 8.3rem;
-	top: 1rem;
-}
-
-.header-buttons a {
-	display: block;
-	text-decoration: none;
-	font-size: 1.4rem;
-	font-weight: bold;
-}
-
-.reservation {
-	background-color: #4CB5F5; 
-	color: #fff;
-	width: 20rem;
-	height: 3.4rem;
-	padding: 1rem .5rem 1rem 3.5rem;
-  border-radius: 2.5rem;
-  transition: all 500ms;
-}
-
-.reservation:hover {
-  background-color: #317199;
-}
-
-.transition:hover {
-  background-color: #317199;
-}
-
-.reservation .fa-chevron-circle-right {
-	margin-left: 3rem;
-}
-
-.reservation .fa-desktop, .phone-number .fa-phone-alt {
-	margin-right: 0.5rem;
-}
-
-.phone-number {
-	padding-top: 1rem;
-	padding-left: 3.5rem;
-	color: #222;
-}
-
-.phone-number .fa-phone-alt {
-	color: #4CB5F5;
-}
-
-/* Header-メニュー */
-.header-menu {
-	float: right;
-	position: absolute;
-	right: 8.3rem;
-	top: 12rem;
-}
-
-.header-menu ul {
-	list-style: none;
-}
-
-.header-menu ul li {
-	float: left;
-	border-right: 1px solid #222;
-	transform: skewX(150deg);
-}
-
-.header-menu ul li:last-child {
-	border: none;
-}
-
-.header-menu ul li a {
-	font-size: 1.4rem;
-	font-weight: bold;
-	color: #222;
-	text-decoration: none;
-	margin: 0 1.8rem;
-	display: block;
-  transform: skewX(-150deg);
-  transition: all 500ms;
-}
-
-.header-menu ul li a:hover {
-  color: #4CB5F5;
-}
-
 /* MainVisual */
 .main-visual img {
 	width: 100%;
+}
+
+.sp-mainvisual {
+  display: none;
 }
 
 /* Anti-Corona */
@@ -293,11 +91,12 @@ header#home {
 }
 
 .concept-odd p, .concept-even p {
-	font-size: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
 	color: #fff;
 	line-height: 2.5rem;
 	background-color: #4CB5F5;
-	padding: 4rem 7rem;
+	padding: 4rem 6rem;
 	width: 50rem;
 	border-radius: 2rem;
 }
@@ -379,6 +178,7 @@ header#home {
 /* Concept-歯を削らない治療を心がけています */
 .concept-explanation {
   position: relative;
+  height: 40.7rem;
   margin-bottom: 5rem;
 }
 
@@ -395,18 +195,24 @@ header#home {
 }
 
 .concept-explanation img {
+  width: 40rem;
+  height: 40.7rem;
   position: absolute;
   top: 0;
   right: 0;
   z-index: -100;
 }
 
+.concept-explanation img.img-clinic-sp {
+  display: none;
+}
+
 /* Concept-水と光による歯科治療 */
 .concept-treatment {
   margin-bottom: 5rem;
-  height: 52rem;
   border: 3px solid #317199;
   border-radius: 2.5rem;
+  padding: 3rem 0;
 }
 
 .concept-treatment-wrap {
@@ -417,7 +223,12 @@ header#home {
 .concept-treatment .concept-treatment-title {
   font-size: 1.6rem;
   text-align: center;
-  margin-top: 2.5rem;
+}
+
+.concept-treatment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 3rem 0;
 }
 
 .concept-treatment .elipse {
@@ -426,7 +237,6 @@ header#home {
   border-radius: 50%;
   position: relative;
   display: inline-block;
-  margin-top: 3rem;
 }
 
 .concept-treatment .elipse h2 {
@@ -460,40 +270,24 @@ header#home {
   color: #F69747;
 }
 
-/* Concept-水と光による歯科治療-Xシェイプ */
+.concept-treatment-wrap p {
+  margin-bottom: 3rem;
+}
+
+.concept-treatment-wrap a.btn {
+  margin: 0 auto;
+}
+
 .multiply {
-  transform: rotate(45deg);
-  display: inline-block;
-  position: relative;
-  top: -8rem;
-  left: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.multiply-height, .multiply-width {
-  position: absolute;
-  width: 7rem;
-  height: 1.2rem;
-  background-color: #4CB5F5;
-}
-
-.multiply-height {
-  transform: rotate(90deg);
-}
-
-.concept-treatment p {
-  margin-top: 2rem;
-}
-
-.btn {
-  margin: 2rem 0 2.5rem 0;
-  position: relative;
-}
-
-.concept-treatment a i {
-  position: absolute;
-  right: 0;
-  top: 1.2rem;
-  right: 2.5rem;
+.multiply img {
+  width: 50%;
+  max-width: 7rem;
 }
 
 /* Banner-かかりつけ歯科医機能強化型歯科診療所 */
@@ -524,11 +318,15 @@ header#home {
   font-weight: bold;
 }
 
-.banner img {
+.banner img.banner-img-pc {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -10;
+}
+
+.banner img.banner-img-sp {
+  display: none;
 }
 
 /* Guide */
@@ -592,21 +390,28 @@ header#home {
   margin-bottom: 7rem;
 }
 
+.info-group {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .info {
   margin-bottom: 5rem;
-  padding-left: 20rem;
   padding-bottom: 1rem;
-  width: 90rem;
   border-bottom: 1px solid #317199;
 }
 
-.info a {
+.info p, .info a {
   font-size: 1.4rem;
-  color: #317199;
-  text-decoration: none;
+  display: inline-block;
 }
 
-.info a span {
+.info p {
+  color: #317199;
+  padding-left: 10%;
+}
+
+.info a {
   color: #222;
   margin-left: 10rem;
 }
@@ -622,13 +427,14 @@ header#home {
 
 .access-hour {
   margin: 0 auto;
-  width: 120rem;
+  width: 100%;
+  max-width: 120rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .access-info {
-  width: 60rem;
+  width: 100%;
   position: relative;
 }
 
@@ -674,7 +480,8 @@ header#home {
 
 /* Access & Hour - 診療時間表 */
 .access table {
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   height: 12rem;
   border-collapse: collapse;
   border: 1px solid #317199;
@@ -733,7 +540,7 @@ header#home {
 }
 
 .access-hour .btn {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 
 .access-hour .btn .fa-desktop {
@@ -763,8 +570,7 @@ header#home {
 .trans .trans-wrap p {
   font-size: 1.3rem;
   line-height: 2.8rem;
-  padding: 1.5rem;
-  height: 33.8rem;
+  padding: 2rem;
 }
 
 .map iframe {
@@ -887,4 +693,443 @@ footer small {
 .page-top-container a.page-top img {
   width: 5rem;
   height: 5rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 1250px) {
+
+  /* Access & Hour */
+  .access-hour {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .access-info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .access-hour .btn {
+    margin-bottom: 6rem;
+  }
+
+  .map iframe {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+
+  /* Banner-かかりつけ歯科医機能強化型歯科診療所 */
+  .banner p {
+    width: 60rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  /* Banner-かかりつけ歯科医機能強化型歯科診療所 */
+  .banner {
+    height: inherit;
+    padding: 4rem 0;
+  }
+
+  .banner p, .banner h2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .banner h2 {
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  .banner img.banner-img-pc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  /* Concept */
+  /* Concept-中川歯科クリニックのコンセプト */
+  .concept-odd, .concept-even {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .concept-odd .elipse, .concept-even .elipse,
+  .concept-odd h3, .concept-even h3,
+  .concept-odd p, .concept-even p {
+    margin-bottom: 2rem;
+  }
+
+  .concept-odd p, .concept-even p {
+    width: 70%;
+  }
+
+  .concept img {
+    width: 60%;
+  }
+
+  .concept-odd img {
+    position: relative;
+  }
+
+  .concept-odd p {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .concept-even .elipse {
+    position: relative;
+  }
+
+  .concept-even h3, .concept-odd h3 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .concept-even p {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .concept-5 img {
+    top: 0;
+  }
+
+  /* Guide - 診療メニュー */
+  .treatment-menu {
+    column-gap: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Concept */
+  /* Concept-中川歯科クリニックのコンセプト */
+  .concept-odd p, .concept-even p {
+    width: 80%;
+    padding: 4rem;
+  }
+
+  .concept img {
+    width: 70%;
+  }
+
+  /* Concept-歯を削らない治療を心がけています */
+  .concept-explanation {
+    height: 100%;
+    background-color: #ffffe6;
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .concept-explanation p {
+    width: 100%;
+  }
+
+  .concept-explanation img.img-clinic-pc {
+    display: none;
+  }
+
+  /* Concept-水と光による歯科治療 */
+  .concept-treatment-wrap {
+    width: 90%;
+  }
+  
+  /* Banner-かかりつけ歯科医機能強化型歯科診療所 */
+  .banner h2 {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .banner h2 span {
+    font-size: 1.8rem;
+  }
+
+  /* Guide - 診療メニュー */
+  .treatment-menu {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7rem;
+  }
+
+  /* Information */
+  .info a {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  /* Access & Hour - 診療時間表 */
+  .access table {
+    width: 90%;
+    max-width: none;
+  }
+
+  /* Access & Hour - 最寄駅から */
+  .trans {
+    float: none;
+    width: 90%;
+  }
+
+  .map iframe {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  /* Information */
+  .info p {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Anti-Corona */
+  .anti-corona p, .anti-corona a {
+    display: block;
+  }
+
+  .anti-corona h3 {
+    padding: 3rem 0 2rem 0;
+  }
+
+  .anti-corona p {
+    margin-bottom: 1rem;
+  }
+
+  /* Concept */
+  /* Concept-中川歯科クリニックのコンセプト */
+  .concept-odd p, .concept-even p {
+    width: 90%;
+    padding: 3rem;
+  }
+
+  .concept img {
+    width: 80%;
+  }
+
+  /* Concept-水と光による歯科治療 */
+  .concept-treatment-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    width: 100%;
+  }
+
+  .concept-treatment-grid .elipse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .multiply img {
+    max-width: 5rem;
+  }
+
+  /* Banner-かかりつけ歯科医機能強化型歯科診療所 */
+  .banner {
+    padding-bottom: 0;
+  }
+
+  .banner img.banner-img-sp {
+    display: block;
+    width: 100%;
+  }
+
+  /* Information */
+  .info-group {
+    width: 95%;
+  }
+
+  .info a, .info p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Reusable */
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-heading h2::before,
+  .section-heading h2::after {
+    width: 5rem;
+  }
+
+  .section-heading h2::before {
+    margin-right: 1.5rem;
+  }
+  
+  .section-heading h2::after {
+    margin-left: 1.5rem;
+  }
+  
+
+  /* Main Visual */
+  .pc-mainvisual {
+    display: none;
+  }
+
+  .sp-mainvisual {
+    display: block;
+  }
+
+  /* Anti-Corona */
+  .anti-corona {
+    margin-top: 3rem;
+  }
+
+  /* Information */
+  .info p {
+    padding-left: 0;
+  }
+
+  .info a {
+    margin-left: 2rem;
+  }
+
+  /* Access & Hour */
+  .access {
+    margin-bottom: 7rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  /* Reusable */
+  .section-heading h2::before,
+  .section-heading h2::after {
+    width: 3rem;
+  }
+
+  /* Guide */
+  .treatment-menu {
+    grid-gap: 5rem;
+  }
+
+  /* Access & Hour - 最寄駅から */
+  .map iframe {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Anti-Corona */
+  .anti-corona h3 {
+    font-size: 1.6rem;
+  }
+
+  /* Concept */
+  /* Concept-中川歯科クリニックのコンセプト */
+  .concept-odd h3, .concept-even h3 {
+    font-size: 1.5rem;
+  }
+
+  .concept-odd p, .concept-even p {
+    width: 95%;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .concept-4 h3 {
+    font-size: 1.4rem;
+  }
+
+  .concept img {
+    width: 95%;
+  }
+
+  /* Guide */
+  .treatment-menu {
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+
+
+  /* Information */
+  .info p, .info a {
+    font-size: 1.2rem;
+  }
+
+  .information .btn {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .information .btn i.fa-chevron-circle-right {
+    top: 1.35rem;
+  }
+
+  /* Access & Hour */
+  .access {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  /* Reusable */
+  .section-heading {
+    margin-bottom: 4rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-heading h2::before,
+  .section-heading h2::after {
+    width: 2rem;
+  }
+
+  .section-heading h2::before {
+    margin-right: 1rem;
+  }
+  
+  .section-heading h2::after {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  /* Anti-Corona */
+  .anti-corona h3 {
+    font-size: 1.4rem;
+  }
+
+  .anti-corona a {
+    font-size: 1.2rem;
+  }
+
+  /* Information */
+  .information .btn {
+    font-size: 1.2rem;
+  }
+
+  .information .btn i.fa-chevron-circle-right {
+    top: 1.5rem;
+    right: 1rem;
+  }
 }
