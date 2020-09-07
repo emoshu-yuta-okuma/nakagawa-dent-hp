@@ -1,0 +1,307 @@
+/* About - インプラントとは？ */
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+}
+
+.about-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.about-grid-img img {
+  width: 90%;
+}
+
+/* Secure - 当院ではガイドシステムを使用した安心・安全で正確なインプラント埋入手術も行っています。 */
+.secure .section-title {
+  padding: 2rem 3rem;
+}
+
+.secure-wrapper {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+  margin-bottom: 5rem;
+}
+
+.secure-grid, .secure-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secure-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 15px 0 15px;
+  border-color: #317199 transparent transparent transparent;
+  transform: rotate(-90deg);
+}
+
+/* CT - 歯科用CTを用いた正確な診療・診断 */
+.ct-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+}
+
+.ct-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Guide system - ガイドシステムによる負担の軽減 */
+.guide-system-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+}
+
+.guide-system-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Comparison - 入れ歯・ブリッジ・インプラントのメリット・デメリットの比較 */
+
+
+/* Case - 前歯・奥歯や本数などケース別インプラント治療 */
+
+
+/* Instant - 抜歯即時インプラント治療 */
+.instant-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1.5fr 1fr 1.5fr;
+  margin-bottom: 5rem;
+}
+
+.instant-grid-img, .instant-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.instant-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 15px 0 15px;
+  border-color: #317199 transparent transparent transparent;
+  transform: rotate(-90deg);
+}
+
+/* Flow - インプラント治療の流れ */
+
+/* Cost - インプラント費用・保険適用  */
+
+/* Deduction - インプラントの医療費控除 */
+
+/* Care - インプラントを長持ちさせるお手入れ方法 */
+.care-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Secure - 当院ではガイドシステムを使用した安心・安全で正確なインプラント埋入手術も行っています。 */
+  .secure .section-title {
+    padding: 2rem 1rem;
+  }
+
+  /* Guide system - ガイドシステムによる負担の軽減 */
+  .guide-system-wrapper {
+    column-gap: 2rem;
+  }
+
+  .guide-system-grid-img img {
+    width: 100%;
+  }
+  
+  /* Instant - 抜歯即時インプラント治療 */
+  .instant-grid-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  /* About - インプラントとは？ */
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .about-wrapper p {
+    order: 2;
+  }
+
+  .about-grid-img {
+    align-items: center;
+  }
+
+  .about-grid-img img {
+    width: 60%;
+  }
+
+  /* Secure - 当院ではガイドシステムを使用した安心・安全で正確なインプラント埋入手術も行っています。 */
+  .secure-grid-img img {
+    width: 90%;
+  }
+
+  /* CT - 歯科用CTを用いた正確な診療・診断 */
+  .ct-wrapper {
+    column-gap: 2rem;
+  }
+
+  .ct-grid-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Care - インプラントを長持ちさせるお手入れ方法 */
+  .care-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .care-grid-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Instant - 抜歯即時インプラント治療 */
+  .instant-wrapper {
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: 
+                        "grid1 grid2 grid3"
+                        ".     .     grid4"
+                        "grid7 grid6 grid5";
+    row-gap: 2rem;
+  }
+
+  .instant-grid-img img {
+    width: 80%;
+  }
+
+  .instant-grid-img01 {
+    grid-area: grid1;
+  }
+
+  .instant-grid01 {
+    grid-area: grid2;
+  }
+
+  .instant-grid-img02 {
+    grid-area: grid3;
+  }
+
+  .instant-grid02 {
+    grid-area: grid4;
+  }
+
+  .instant-grid-img03 {
+    grid-area: grid5;
+  }
+
+  .instant-grid03 {
+    grid-area: grid6;
+  }
+
+  .instant-grid-img04 {
+    grid-area: grid7;
+  }
+
+  .instant-grid02 .instant-triangle {
+    transform: rotate(0deg);
+  }
+
+  .instant-grid03 .instant-triangle {
+    transform: rotate(90deg);
+  }
+
+  /* Care - インプラントを長持ちさせるお手入れ方法 */
+  .care-grid-img img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  /* About - インプラントとは？ */
+  .about-grid-img img {
+    width: 70%;
+  }
+
+  /* Secure - 当院ではガイドシステムを使用した安心・安全で正確なインプラント埋入手術も行っています。 */
+  .secure-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .secure-grid-img img {
+    width: 65%;
+  }
+
+  .secure-triangle {
+    transform: rotate(0deg);
+  }
+
+  /* CT - 歯科用CTを用いた正確な診療・診断 */
+  .ct-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .ct-grid-img img {
+    width: 65%;
+  }
+
+  /* Guide system - ガイドシステムによる負担の軽減 */
+  .guide-system-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .guide-system-grid-img img {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Secure - 当院ではガイドシステムを使用した安心・安全で正確なインプラント埋入手術も行っています。 */
+  .secure-grid-img img {
+    width: 70%;
+  }
+
+  /* CT - 歯科用CTを用いた正確な診療・診断 */
+  .ct-grid-img img {
+    width: 70%;
+  }
+
+  /* Guide system - ガイドシステムによる負担の軽減 */
+  .guide-system-grid-img img {
+    width: 70%;
+  }
+}
