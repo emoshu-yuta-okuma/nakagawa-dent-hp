@@ -1,0 +1,353 @@
+/* Concept1 - 削らない治療・神経を残す治療が可能です */
+.concept-1-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+                      "grid1 grid1 grid2"
+                      "grid3 grid4 grid4";
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.concept-1-grid1 {
+  grid-area: grid1;
+}
+
+.concept-1-grid1 h3 {
+  color: #4CB5F5;
+  margin-bottom: 3rem;
+}
+
+.concept-1-grid2 {
+  grid-area: grid2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.concept-1-grid2 img, .concept-1-grid3 img {
+  width: 100%;
+}
+
+.concept-1-grid3 {
+  grid-area: grid3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.concept-1-grid4 {
+  grid-area: grid4;
+}
+
+.promise {
+  padding: 2.5rem 0;
+}
+
+.promise h3 {
+  color: #317199;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.promise h3::before,
+.promise h3::after {
+  content: "";
+  border-top: 2px solid #317199;
+  width: 5rem;
+}
+
+.promise h3::before {
+  margin-right: 1.5rem;
+}
+
+.promise h3::after {
+  margin-left: 1.5rem;
+}
+
+.promise-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.promise-wrapper p {
+  padding: 0.5rem 0;
+}
+
+.promise-wrapper p span {
+  color: #4CB5F5;
+  font-weight: bold;
+}
+
+/* Concept2 - 歯を削らない・神経を残せる・痛みの少ない治療 歯科用プラズマレーザー */
+.concept-2-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+                      "grid1 grid1 grid1 grid2 grid2"
+                      'grid3 grid3 grid3 grid3 grid3';
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.concept-2-grid1 {
+  grid-area: grid1;
+}
+
+.concept-2-grid2 {
+  grid-area: grid2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.concept-2-grid2 img {
+  width: 100%;
+}
+
+.concept-2-grid3 {
+  grid-area: grid3;
+}
+
+.concept-2-grid1 h3 {
+  color: #4CB5F5;
+  margin-bottom: 3rem;
+}
+
+.concept-2 .advantage {
+  padding: 2.5rem 0;
+}
+
+.advantage h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.advantage-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.advantage-wrapper p {
+  padding: 0.5rem 0;
+}
+
+.advantage-wrapper p i {
+  color: #4CB5F5;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.concept-2-faq {
+  margin-top: 5rem;
+}
+
+.concept-2-faq h3 {
+  font-size: 1.6rem;
+  color: #4CB5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.concept-2-faq h3::before,
+.concept-2-faq h3::after {
+  content: "";
+  border-top: 2px solid #4CB5F5;
+  width: 5rem;
+}
+
+.concept-2-faq h3::before {
+  margin-right: 1.5rem;
+}
+
+.concept-2-faq h3::after {
+  margin-left: 1.5rem;
+}
+
+.faq-wrapper h4 {
+  font-size: 1.4rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* Concept3 - 歯科用CT(レントゲン)による正確な診査と適切な治療計画を立案 */
+.concept-3 h3 {
+  color: #4CB5F5;
+  margin-bottom: 2.5rem;
+}
+
+.concept-3-wrapper1, .concept-3-wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+                      "grid1 grid2"
+                      "grid3 grid3";
+  row-gap: 2.5rem;
+  column-gap: 1.5rem;
+}
+
+.concept-3-wrapper1 {
+  margin-bottom: 5rem;
+}
+
+.concept-3-grid1, .concept-3-grid4 {
+  grid-area: grid1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.concept-3-grid2, .concept-3-grid5 {
+  grid-area: grid2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.concept-3-grid1 img, .concept-3-grid2 img,
+.concept-3-grid4 img, .concept-3-grid5 img {
+  width: 100%;
+}
+
+.concept-3-grid3, .concept-3-grid6 {
+  grid-area: grid3;
+}
+
+/* Media Query */
+@media screen and (max-width: 840px) {
+
+  /* Concept1 - 削らない治療・神経を残す治療が可能です */
+  .promise-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  /* Concept1 - 削らない治療・神経を残す治療が可能です */
+  .promise-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+
+  /* Concept1 - 削らない治療・神経を残す治療が可能です */
+  .promise-wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  /* Concept1 - 削らない治療・神経を残す治療が可能です */
+  .concept-1-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "grid1"
+                        "grid2"
+                        "grid4"
+                        "grid3";
+  }
+
+  .concept-1-grid2 {
+    align-items: center;
+  }
+
+  .concept-1-grid3 {
+    align-items: center;
+  }
+
+  .concept-1-grid2 img, .concept-1-grid3 img {
+    width: 70%;
+  }
+
+  /* Concept2 - 歯を削らない・神経を残せる・痛みの少ない治療 歯科用プラズマレーザー */
+  .concept-2-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "grid1"
+                        "grid2"
+                        "grid3";
+  }
+
+  .concept-2-grid2 {
+    align-items: center;
+  }
+
+  .concept-2-grid2 img {
+    width: 70%;
+  }
+
+  .advantage-wrapper {
+    grid-template-columns: 1fr;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  /* Concept3 - 歯科用CT(レントゲン)による正確な診査と適切な治療計画を立案 */
+  .concept-3-wrapper1, .concept-3-wrapper2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+                        "grid1"
+                        "grid2"
+                        "grid3";
+  }
+
+  .concept-3-grid1 img, .concept-3-grid2 img,
+  .concept-3-grid4 img, .concept-3-grid5 img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  /* Concept2 - 歯を削らない・神経を残せる・痛みの少ない治療 歯科用プラズマレーザー */
+  .advantage-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Concept1 - 削らない治療・神経を残す治療が可能です */
+  .concept-1-grid2 img, .concept-1-grid3 img {
+    width: 85%;
+  }
+
+  .promise h3::before, .promise h3::after {
+    width: 3rem;
+  }
+
+  .promise h3::before {
+    margin-right: 1rem;
+  }
+  
+  .promise h3::after {
+    margin-left: 1rem;
+  }
+
+  /* Concept2 - 歯を削らない・神経を残せる・痛みの少ない治療 歯科用プラズマレーザー */
+  .concept-2-grid2 img {
+    width: 85%;
+  }
+
+  /* Concept3 - 歯科用CT(レントゲン)による正確な診査と適切な治療計画を立案 */
+  .concept-3-grid1 img, .concept-3-grid2 img,
+  .concept-3-grid4 img, .concept-3-grid5 img {
+    width: 85%;
+  }
+}
