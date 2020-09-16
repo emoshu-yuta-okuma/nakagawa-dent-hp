@@ -1,0 +1,212 @@
+/* Infection Measures - 感染対策 */
+.infection-measures h3 {
+  color: #317199;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.infection-measures h4 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.infection-measures .measures-1 p {
+  line-height: 2.8rem;
+}
+
+.infection-measures .measures-1 p:last-child {
+  padding-top: 1.5rem;
+}
+
+.infection-measures .measures-2 p.line-height {
+  line-height: 4rem;
+} 
+
+.infection-measures .measures-2 a {
+  word-break: break-all;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  color: #317199;
+  display: inline-block;
+  padding: 1rem 0 1.5rem 0;
+}
+
+/* Epios - エピオスシステム */
+.epios-eco-system {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.epios-eco-system h3 {
+  color: #4CB5F5;
+  margin-bottom: 2.5rem;
+}
+
+.epios-eco-system img {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.epios-advantages {
+  width: 70%;
+  margin: 0 auto 3rem;
+  padding: 2rem 4rem;
+}
+
+.epios-advantages h4, .epios-article h4 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.epios-advantages p {
+  padding: 0.5rem 0;
+}
+
+.epios-advantages p i {
+  color: #4CB5F5;
+  margin-right: 1rem;
+}
+
+.epios-article {
+  margin-top: 3rem;
+  padding: 2.5rem 3rem 2.5rem 5rem;
+}
+
+.epios-article-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  column-gap: 2rem;
+}
+
+.epios-article-wrapper img {
+  width: 100%;
+  max-width: 20rem;
+}
+
+/* Facilities - 院内紹介 */
+.about-clinic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+  row-gap: 2rem;
+}
+
+.about-clinic .about-clinic-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-clinic-wrapper img, .about-clinic-wrapper p {
+  width: 100%;
+}
+
+.about-clinic-wrapper h3 {
+  color: #317199;
+  margin: 1.5rem 0 1rem 0;
+}
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+
+  /* Epios - エピオスシステム */
+  .epios-advantages {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Infection Measures - 感染対策 */
+  .infection-measures h4 {
+    font-size: 1.3rem;
+  }
+  
+  /* Epios - エピオスシステム */
+  .epios-eco-system {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .epios-eco-system-wrapper {
+    width: 100%;
+  }
+
+  .epios-eco-system-wrapper:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .epios-eco-system-wrapper img {
+    width: 60%;
+    max-width: none;
+  }
+
+  .epios-advantages {
+    width: 90%;
+  }
+
+  .epios-article-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .epios-article-wrapper:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .epios-article-wrapper img {
+    max-width: none;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Epios - エピオスシステム */
+  .epios-eco-system-wrapper img {
+    width: 80%;
+  }
+
+  .epios-advantages {
+    width: 100%;
+  }
+
+  /* Facilities - 院内紹介 */
+  .about-clinic {
+    grid-template-columns: 1fr;
+  }
+
+  .about-clinic .about-clinic-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Epios - エピオスシステム */
+  .epios-article-wrapper img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Infection Measures - 感染対策 */
+  .infection-measures .measures-2 p.line-height {
+    line-height: 3rem;
+  }
+
+  /* Epios - エピオスシステム */
+  .epios-advantages {
+    padding: 2rem;
+  }
+}
