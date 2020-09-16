@@ -1,0 +1,460 @@
+/* Reusable */
+.step-triangle {
+  width: 0;
+  height: 0;
+  margin: 3rem auto;
+  border-style: solid;
+  border-width: 25px 15px 0 15px;
+  border-color: #317199 transparent transparent transparent;
+}
+
+/* Impression - 歯列矯正治療の目的：歯並びだけで第一印象は大きく変わります */
+.impression-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  column-gap: 1.5rem;
+}
+
+.impression-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Check - 今すぐできる！歯並びチェック */
+.check-wrapper {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  column-gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.check-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.checklist {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.checklist h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.checklist-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.checklist-wrapper p {
+  padding: 0.5rem 0;
+}
+
+.checklist-wrapper p i {
+  color: #4CB5F5;
+  margin-right: 1rem;
+}
+
+/* DEN - 透明で目立たない！痛くない！歯列矯正装置「DENマウスピース」 */
+.den-wrapper {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.den-grid p {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.den-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DEN-Feature - DENマウスピース矯正の特徴 */
+.den-feature table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #317199;
+  margin-bottom: 4rem;
+}
+
+.den-feature table th {
+  color: #317199;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  background-color: #D5EAF8;
+}
+
+.den-feature table th:first-child {
+  width: 30%;
+}
+
+.den-feature table td {
+  background-color: #fff;
+  padding: 2.5rem;
+  font-size: 1.4rem;
+}
+
+.den-feature table td:first-child {
+  font-weight: bold;
+}
+
+.den-feature p.den-desc {
+  margin-bottom: 4rem;
+}
+
+.den-feature h3 {
+  color: #4CB5F5;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feature-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+                      "grid1 grid2"
+                      "grid3 grid4";
+}
+
+.feature-wrapper .merit {
+  grid-area: grid1;
+}
+
+.feature-wrapper .demerit {
+  grid-area: grid2;
+}
+
+.merit, .demerit {
+  width: 100%;
+  background-color: #D5EAF8;
+  border: 1px solid #317199;
+  padding: 1rem 0;
+}
+
+.merit p, .demerit p {
+  font-weight: bold;
+  text-align: center;
+  color: #317199;
+}
+
+.feature-wrapper .advantage-wrapper {
+  grid-area: grid3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+}
+
+.feature-wrapper .disadvantage-wrapper {
+  grid-area: grid4;
+}
+
+.advantage-wrapper, .disadvantage-wrapper {
+  background-color: #fff;
+  border: 1px solid #317199;
+  border-top: 0;
+  padding: 1rem;
+}
+
+.advantage-wrapper p, .disadvantage-wrapper p {
+  padding: 0.5rem 0;
+}
+
+/* DEN-Flow - DENマウスピース矯正の治療の流れ */
+.den-flow .flow-top {
+  margin: 0 auto;
+  display: block;
+  width: 75%;
+  margin-bottom: 5rem;
+}
+
+.den-flow-wrapper {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.den-step {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.den-step .square {
+  background-color: #4CB5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.den-step .square::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: -2.3rem;
+  border-style: solid;
+  border-color: #4CB5F5 transparent transparent transparent;
+  border-width: 2rem 1.5rem 0 1.5rem;
+  transform: rotate(-90deg);
+}
+
+.den-step .square p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.den-step .text-wrap {
+  padding: 1.5rem 1rem 1.5rem 3rem;
+}
+
+.den-step .text-wrap h4 {
+  font-size: 1.4rem;
+  color: #4CB5F5;
+  margin-bottom: 1rem;
+}
+
+
+.desc-wrapper {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  column-gap: 1rem;
+  background-color: #fff;
+  border: 1px solid #4CB5F5;
+}
+
+.desc-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+/* SH - 抜歯せずに歯列矯正できる「SH療法」 */
+.sh p.sh-top {
+  margin-bottom: 4rem;
+}
+
+.sh h3 {
+  text-align: center;
+  color: #4CB5F5;
+  margin-bottom: 3rem;
+}
+
+.sh-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* SH-Flow - SH療法の治療の流れ */
+.sh-flow-wrapper {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.sh-step {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.sh-step .square {
+  background-color: #4CB5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sh-step .square::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: -2.3rem;
+  border-style: solid;
+  border-color: #4CB5F5 transparent transparent transparent;
+  border-width: 2rem 1.5rem 0 1.5rem;
+  transform: rotate(-90deg);
+}
+
+.sh-step .square p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.sh-step .text-wrap {
+  background-color: #fff;
+  border: 1px solid #4CB5F5;
+}
+
+.sh-step .text-wrap h4 {
+  font-size: 1.4rem;
+  color: #4CB5F5;
+  padding: 1.5rem 1rem 1rem 3rem;
+}
+
+.sh-step .text-wrap p {
+  padding: 0 1rem 1.5rem 3rem;
+}
+
+/* Cost - 歯列矯正の費用について */
+
+/* Deduction - 歯列矯正費用の医療費控除について */
+
+
+/* Media Query */
+@media screen and (max-width: 850px) {
+
+  /* Check - 今すぐできる！歯並びチェック */
+  .checklist-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Impression - 歯列矯正治療の目的：歯並びだけで第一印象は大きく変わります */
+  .impression-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .impression-grid-img {
+    align-items: center;
+  }
+
+  /* Check - 今すぐできる！歯並びチェック */
+  .check-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .check-grid-img {
+    align-items: center;
+  }
+
+  .checklist-wrapper {
+    width: 80%;
+  }
+
+  /* DEN - 透明で目立たない！痛くない！歯列矯正装置「DENマウスピース」 */
+  .den-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  /* DEN-Feature - DENマウスピース矯正の特徴 */
+  .den-feature table td {
+    padding: 2rem;
+  }
+
+  /* DEN-Flow - DENマウスピース矯正の治療の流れ */
+  .den-step {
+    grid-template-columns: 1fr 7fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  /* Check - 今すぐできる！歯並びチェック */
+  .checklist-wrapper {
+    width: 90%;
+  }
+
+  /* DEN-Feature - DENマウスピース矯正の特徴 */
+  .feature-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                        "grid1"
+                        "grid3"
+                        "grid2"
+                        "grid4";
+  }
+
+  /* DEN-Flow - DENマウスピース矯正の治療の流れ */
+  .desc-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .desc-grid-img {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  /* SH - 抜歯せずに歯列矯正できる「SH療法」 */
+  .sh-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .sh .merit {
+    order: 0;
+  }
+
+  .sh .advantage-wrapper {
+    order: 1;
+  }
+
+  .sh .demerit {
+    order: 2;
+  }
+
+  .sh .disadvantage-wrapper {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* DEN-Feature - DENマウスピース矯正の特徴 */
+  .den-feature table td {
+    padding: 1.5rem;
+  }
+
+  /* DEN-Flow - DENマウスピース矯正の治療の流れ */
+  .den-step {
+    grid-template-columns: 1fr 5fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  /* SH-Flow - SH療法の治療の流れ */
+  .sh-step {
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* DEN-Feature - DENマウスピース矯正の特徴 */
+  .den-step {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .feature-wrapper .advantage-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

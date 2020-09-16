@@ -1,0 +1,102 @@
+/* Effort Description - 安心の医療機器 */
+.effort-description img.effort-top {
+  display: block;
+  width: 60%;
+  margin: 0 auto 3rem;
+}
+
+/* Equipment - 医療機器紹介 */
+.equip-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  margin-bottom: 4.5rem;
+}
+
+.equip-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.equip-grid h3 {
+  color: #4CB5F5;
+}
+
+.equip-grid h4 {
+  font-size: 1.4rem;
+  margin: 3rem 0 1.2rem 0;
+}
+
+.equip-grid h4 span {
+  color: #4CB5F5;
+  margin-right: 0.5rem;
+}
+
+.equip-grid-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.equip-grid-img img.equip-img {
+  width: 90%;
+}
+
+/* Media Query */
+@media screen and (max-width: 650px) {
+
+  /* Equipment - 医療機器紹介 */
+  .equip-wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 1.5rem;
+  }
+
+  .equip-grid {
+    order: 1;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .equip-grid-img {
+    order: 0;
+    justify-content: center;
+  }
+
+  .equip-grid-img img.equip-img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* Effort Description - 安心の医療機器 */
+  .effort-description img.effort-top {
+    width: 70%;
+  }
+
+  /* Equipment - 医療機器紹介 */
+  .equip-grid {
+    width: 80%;
+  }
+
+  .equip-grid-img img.equip-img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  /* Effort Description - 安心の医療機器 */
+  .effort-description img.effort-top {
+    width: 80%;
+  }
+
+  /* Equipment - 医療機器紹介 */
+  .equip-grid {
+    width: 90%;
+  }
+
+  .equip-grid-img img.equip-img {
+    width: 90%;
+  }
+}

@@ -1,0 +1,331 @@
+/* Caution - 子どもは大人より虫歯になりやすいので要注意 */
+.caution-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1.5rem;
+}
+
+.caution-grid-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Prevent - 小児歯科メニュー：予防歯科 */
+table.prevent-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #317199;
+  margin-top: 4rem;
+}
+
+table.prevent-table th {
+  color: #317199;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  background-color: #D5EAF8;
+}
+
+table.prevent-table td {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  font-size: 1.4rem;
+}
+
+table.prevent-table td img {
+  margin-top: 1.5rem;
+}
+
+table.prevent-table td:first-child {
+  font-weight: bold;
+}
+
+table.prevent-table td:last-child {
+  line-height: 3rem;
+}
+
+/* Ortho - 小児歯科メニュー：矯正歯科 */
+.ortho-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ortho-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.orho-advantage {
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.orho-advantage h3 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.ortho-advantage-wrapper {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.ortho-advantage-wrapper p {
+  padding: 0.5rem 0;
+}
+
+.ortho-advantage-wrapper p i {
+  color: #4CB5F5;
+  margin-right: 0.5rem;
+}
+
+p.ortho-objective {
+  margin-bottom: 4rem;
+}
+
+.ortho-habit {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto 3.5rem;
+}
+
+.ortho-habit h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ortho-habit-article {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.ortho-habit .article-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.ortho-habit .article-grid {
+  margin: 0 auto;
+}
+
+.sho-ortho {
+  padding: 2rem 2rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.sho-ortho h3 {
+  text-align: center;
+  color: #317199;
+  margin-bottom: 3rem;
+}
+
+.sho-ortho-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 2rem;
+}
+
+.sho-ortho-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sh {
+  padding: 2rem 2rem 3rem;
+}
+
+.sh h3 {
+  text-align: center;
+  color: #317199;
+  margin-bottom: 3rem;
+}
+
+.sh-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 3rem;
+}
+
+.sh-grid, .sh-grid-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sh p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sh-triangle {
+  width: 0;
+  height: 0;
+  margin: 3rem auto;
+  border-style: solid;
+  border-width: 25px 15px 0 15px;
+  border-color: #317199 transparent transparent transparent;
+  transform: rotate(-90deg);
+}
+
+/* Habit - 子どもの虫歯対策に一番大切なことは正しい生活習慣を身につけること */
+.habit p {
+  margin-bottom: 2.5rem;
+}
+
+table.habit-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #317199;
+  margin-top: 4rem;
+}
+
+table.habit-table th {
+  color: #317199;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  background-color: #D5EAF8;
+}
+
+table.habit-table th:first-child {
+  width: 30%;
+}
+
+table.habit-table td {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  font-size: 1.4rem;
+}
+
+table.habit-table td:first-child {
+  font-weight: bold;
+}
+
+table.habit-table td:last-child {
+  line-height: 3rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+
+  /* Prevent - 小児歯科メニュー：予防歯科 */
+  table.prevent-table td {
+    font-size: 1.2rem;
+  }
+
+  /* Habit - 子どもの虫歯対策に一番大切なことは正しい生活習慣を身につけること */
+  table.habit-table td {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  /* Ortho - 小児歯科メニュー：矯正歯科 */
+  .ortho-advantage-wrapper {
+    width: 70%;
+  }
+
+  .sho-ortho-grid-img img {
+    width: 100%;
+  }
+
+  .sh-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .sh-triangle {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Habit - 子どもの虫歯対策に一番大切なことは正しい生活習慣を身につけること */
+  table.habit-table td {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  /* Caution - 子どもは大人より虫歯になりやすいので要注意 */
+  .caution-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .caution-grid-img {
+    align-items: center;
+  }
+
+  /* Prevent - 小児歯科メニュー：予防歯科 */
+  table.prevent-table td img {
+    width: 15rem;
+  }
+
+  table.prevent-table td:last-child {
+    line-height: 2rem;
+  }
+
+  /* Ortho - 小児歯科メニュー：矯正歯科 */
+  .ortho-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  
+  .ortho-grid-img {
+    align-items: center;
+  }
+  
+  .ortho-advantage-wrapper {
+    width: 85%;
+  }
+  
+  .sho-ortho-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  
+  .sho-ortho-grid-img img {
+    width: 80%;
+  }
+
+  /* Habit - 子どもの虫歯対策に一番大切なことは正しい生活習慣を身につけること */
+  table.habit-table td {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  /* Prevent - 小児歯科メニュー：予防歯科 */
+  table.prevent-table td img {
+    width: 12rem;
+  }
+
+  table.prevent-table td {
+    padding: 1.5rem;
+  }
+  
+  /* Ortho - 小児歯科メニュー：矯正歯科 */
+  .sh a.btn {
+    font-size: 1.2rem;
+  }
+
+  .sh a.btn i.fa-chevron-circle-right {
+    right: 1.4rem;
+  }
+}
