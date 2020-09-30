@@ -26,3 +26,191 @@
 .section-heading h2::after {
 	margin-left: 1.8rem;
 }
+
+/* Director - 院長紹介 */
+/* Doctor - 歯科医師紹介 */
+section.director {
+	margin-bottom: 20rem;
+}
+
+.staff:nth-child(2) {
+	margin-bottom: 15rem;
+}
+
+.staff-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.staff-grid-img img {
+	width: 100%;
+}
+
+.staff-grid {
+	margin-left: 3rem;
+}
+
+.staff-grid h4 {
+	color: #317199;
+	font-size: 1.6rem;
+	padding: 2rem 0;
+}
+
+.staff-grid h4:first-child {
+	padding-top: 0;
+}
+
+.staff-grid h3 {
+	font-size: 2.2rem;
+}
+
+h4.title-top {
+	color: #317199;
+	font-size: 1.6rem;
+	padding: 3rem 0 2rem;
+}
+
+.certificate-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 6rem;
+	row-gap: 3rem;
+}
+
+.certificate-grid {
+	display: grid;
+	grid-template-rows: 1fr 6rem;
+}
+
+.certificate-grid-img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.certificate-grid img {
+	width: 100%;
+}
+
+.certificate-grid-p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+
+	/* Director - 院長紹介 */
+	/* Doctor - 歯科医師紹介 */
+	.staff-grid h4 {
+		font-size: 1.4rem;
+	}
+
+	.staff-grid h3 {
+		font-size: 2rem;
+	}
+
+	h4.title-top {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	/* Director - 院長紹介 */
+	/* Doctor - 歯科医師紹介 */
+	.certificate-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	/* Director - 院長紹介 */
+	/* Doctor - 歯科医師紹介 */
+	.staff-wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.staff-grid {
+		margin-left: 0;
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	/* Reusable */
+  .section-heading {
+    margin-bottom: 5rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-heading h2::before,
+  .section-heading h2::after {
+    width: 5rem;
+  }
+
+  .section-heading h2::before {
+    margin-right: 1.5rem;
+  }
+  
+  .section-heading h2::after {
+    margin-left: 1.5rem;
+	}
+	
+	/* Director - 院長紹介 */
+	/* Doctor - 歯科医師紹介 */
+	.certificate-wrapper {
+		column-gap: 3rem;
+	}
+}
+
+@media screen and (max-width: 440px) {
+
+  /* Reusable */
+  .section-heading h2::before,
+  .section-heading h2::after {
+    width: 3rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	/* Director - 院長紹介 */
+	/* Doctor - 歯科医師紹介 */
+	.certificate-wrapper {
+		column-gap: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 370px) {
+
+  /* Reusable */
+  .section-heading {
+    margin-bottom: 4rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-heading h2::before,
+  .section-heading h2::after {
+    width: 2rem;
+  }
+
+  .section-heading h2::before {
+    margin-right: 1rem;
+  }
+  
+  .section-heading h2::after {
+    margin-left: 1rem;
+  }
+}

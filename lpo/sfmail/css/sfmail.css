@@ -1,0 +1,204 @@
+@charset "UTF-8";
+div#mf_wrapper {
+	width: 640px;
+	text-align: left;
+	margin: 0px auto 0px auto;
+	font-family: sans-serif;
+}
+div#mf_header h1 {
+	font-size: 24px;
+	border-bottom: solid 1px #999999;
+	margin: 0px;
+	padding: 0px;
+}
+div#mf_header h2 {
+	font-size: 16px;
+	color: #999999;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+form#fmail {
+	padding: 5px;
+}
+
+form fieldset {
+	border-width: 0;
+}
+
+
+/*-------------------------------------------------*/
+/* 送信完了画面                                    */
+/*-------------------------------------------------*/
+div.fmail_thankspage {
+	padding: 15px;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+
+
+/*-------------------------------------------------*/
+/* ボタンの設定                                    */
+/*-------------------------------------------------*/
+/* 確認画面の送信ボタンの装飾 */
+form#fmail p {
+	width: 100%;
+	text-align: center;
+}
+
+/* 確認画面へ進むボタンの装飾 */
+.submit_confirm_button {
+	width:160px;
+	height:35px;
+	border-width:0;
+	margin: 10px 0 0 0;
+	border-style:none;
+	background:url(../images/submit_button.jpg);
+}
+.submit_confirm_button:hover {
+	background-position: right bottom;
+}
+
+
+/* 送信ボタン */
+.submit_send_button {
+	width:160px;
+	height:35px;
+	border-width:0;
+	border-style:none;
+	background:url(../images/send_button.jpg);
+}
+.submit_send_button:hover {
+	background-position: right bottom;
+}
+
+/* 戻るボタン */
+.submit_cancel_button {
+	width:160px;
+	height:35px;
+	border-width:0;
+	border-style:none;
+	background:url(../images/back_button.jpg);
+}
+.submit_cancel_button:hover {
+	background-position: right bottom;
+}
+
+/* 送信完了画面 */
+.site_top a{
+	display:block;
+	width:160px;
+	height:35px;
+	margin: 1em auto;
+	border-width:0;
+	border-style:none;
+	background:url(../images/top_button.jpg);
+	text-align:center;
+	text-indent:-9999px;
+}
+.site_top a:hover{
+	background-position: right bottom;
+}
+
+
+/*-------------------------------------------------*/
+/* テーブル設定                                    */
+/*-------------------------------------------------*/
+.black { color:#333;}
+.mailform input,.mailform select,.mailform  option { color:#333;}
+table.mailform {
+	padding: 1em;
+	width: 100%;
+	border-collapse: collapse;
+	border: solid 3px #666666;
+	margin: 0 0 20px 0;
+}
+table.mailform tr th, table.mailform tr td {
+	padding: 7px 5px 7px 5px;
+	border-collapse: collapse;
+	border: solid 1px #666666;
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
+	color:#000;
+}
+table.mailform tr th {
+	width: 150px;
+}
+table.mailform tr th p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	color: #333;
+}
+table.mailform tr td textarea {
+	width: 90%;
+	height: 120px;
+}
+
+
+
+/*-------------------------------------------------*/
+/* 項目内に関わる設定                              */
+/*-------------------------------------------------*/
+.fmail_year {	width: 60px;	text-align: right;}
+.fmail_month {	width: 40px;	text-align: right;}
+.fmail_day {	width: 40px;	text-align: right;}
+
+
+/*-------------------------------------------------*/
+/* 項目内に関わる設定                              */
+/*-------------------------------------------------*/
+/* 必須項目アイコン */
+.fmail_must {
+	/*display: block;
+	float: right;
+	width: 30px;
+	height: 16px;
+	background: url(../images/mfp_must.gif);
+	text-indent: -9999px;*/
+	font-weight: bold; color:#0060b6; 
+}
+
+/* 注意 */
+.fmail_caution {	color: red;}
+
+/* インフォメーション */
+.fmail_info {	color: #009900;}
+
+/* 強調 */
+.fmail_strong {	font-weight: bold;}
+
+
+/*-------------------------------------------------*/
+/* ラベル設定                                      */
+/*-------------------------------------------------*/
+label.fmail_label {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	padding:5px;
+	width: auto;
+	height: auto;
+}
+
+/* hover */
+label.fmail_label:hover {
+	background-color: #FFCE3C;
+}
+
+label {
+	cursor: pointer;
+}
+
+
+/*-------------------------------------------------*/
+/* マニュアルに関わる設定（本番運用では不要）      */
+/*-------------------------------------------------*/
+.manual {
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999999;
+	font-size: 0.9em;
+}
