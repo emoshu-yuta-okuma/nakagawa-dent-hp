@@ -60,6 +60,7 @@
 .table-grid table td {
   padding: 1rem 1.5rem;
   font-size: 1.4rem;
+  background-color: #fff;
 }
 
 .table-grid table tr:first-child td {

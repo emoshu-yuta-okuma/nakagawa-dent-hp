@@ -56,6 +56,10 @@
   justify-content: center;
 }
 
+.ct-grid-img img {
+  width: 60%;
+}
+
 /* Guide system - ガイドシステムによる負担の軽減 */
 .guide-system-wrapper {
   display: grid;
