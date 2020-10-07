@@ -84,14 +84,15 @@
   margin-bottom: 5rem;
 }
 
-.concept .elipse {
-	font-size: 3.5rem;
+.concept-grid .elipse {
+	font-size: 3rem;
 	font-weight: bold;
 	color: #fff;
-	background-color: #4CB5F5;
+  background-color: #4CB5F5;
+  text-align: center;
+  line-height: 6rem;
 	width: 6rem;
 	height: 6rem;
-	padding: 1rem;
 	border-radius: 50%;
 	display: inline-block;
 }
@@ -503,29 +504,6 @@
   padding: 0;
   padding-top: 0.4rem;
   color: #4CB5F5;
-}
-
-.special-hour {
-  display: flex;
-}
-
-.special-hour p .filled-circle, .special-hour p .triangle {
-  font-size: 2.3rem;
-}
-
-.special-hour p .filled-circle {
-  color: #317199;
-}
-
-.special-hour p .triangle {
-  color: #4CB5F5;
-}
-
-.special-hour p {
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
 }
 
 .access-hour .btn {

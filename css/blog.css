@@ -1,0 +1,102 @@
+/* Blog - ブログ一覧 */
+/* #blog .list_post{
+	background:#f7f7f7;
+	padding:20px;
+	border-radius:5px;
+} */
+
+#blog .list_post li{
+	border-top:dashed 1px #ddd;
+	padding-top:10px;
+	margin-top:10px;
+}
+
+#blog .list_post li:first-child{
+	margin-top:0;
+	padding-top:0;
+	border-top:0;
+}
+
+#blog .list_post li a{
+	color:#333;
+	text-decoration:none;
+	/* background:url(../icons/icon_arrow02.png) 0 5px no-repeat; */
+	padding-left:20px;
+}
+
+#blog .list_post li a:hover{
+	color:#4CB5F5;
+}
+
+.container h3 {
+  font-weight:bold;
+  font-size:27px;
+  color:#3D3938;
+  /*padding-top:20px;*/
+  margin-bottom:30px;
+  line-height:32px;
+}
+
+.center {
+  text-align: center;
+}
+
+.back-btn{
+	display:inline-block;
+	padding:8px 20px;
+	background:#317199;
+	border-radius:5px;
+	color:#fff;
+	min-width:120px;
+	text-decoration:none;
+	font-size:14px;
+	margin-top:30px;
+	text-align: center;
+}
+
+.back-btn:hover{
+	color:#fff;
+	background:#4CB5F5;
+}
+
+ul.pagination {
+	text-align: center;
+	border-top: 1px solid #f0f0f0;
+	padding: 30px 0 0 0;
+}
+ul.pagination li {
+	display: inline-block;
+}
+ul.pagination li a {
+	padding: 3px 12px;
+	text-decoration: none;
+	display: block;
+	border-radius: 5px;
+	color: #333;
+}
+ul.pagination li.active a, ul.pagination li.active a:hover {
+	background: #317199;
+	color: #fff;
+	cursor: pointer;
+}
+ul.pagination li a:hover {
+	background: #4CB5F5;
+	color: #000;
+	cursor: pointer;
+}
+ul.pagination li.disabled a {
+	display: none;
+}
+
+#blog .pagination li.disabled {
+  background: none!important;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+
+  /* ブログ一覧 */
+  #blog .list_post li a {
+    display: table;
+  }
+}
