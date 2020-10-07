@@ -605,3 +605,10 @@
     display: none;
   }
 }
+
+/* tel */
+@media screen and (min-width: 768px) {
+  a[href*="tel:"] {
+    pointer-events: none;
+  }
+}
