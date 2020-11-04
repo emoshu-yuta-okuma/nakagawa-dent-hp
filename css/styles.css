@@ -920,10 +920,6 @@ footer small {
   
 
   /* Main Visual */
-  .pc-mainvisual {
-    display: none;
-  }
-
   .sp-mainvisual {
     display: block;
   }

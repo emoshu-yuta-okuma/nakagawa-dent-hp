@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/styles.css?date=20201006" type="text/css">
   <link rel="stylesheet" href="css/common.css" type="text/css">
   <link rel="stylesheet" href="css/common-responsive.css" type="text/css">
+  <link rel="stylesheet" href="../css/slick.css" type="text/css">
   <link rel="canonical" href="https://www.nakagawadent.net/" />
   <script src="https://kit.fontawesome.com/f714ef2d5d.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -85,9 +86,12 @@
   </header>
 
   <!-- Main Visual -->
-  <div class="main-visual">
-    <img src="images/pc_top_mainvisual.jpg" alt="メインビジュアル" class="pc-mainvisual">
-    <img src="images/sp_top_mainvisual.jpg" alt="メインビジュアル" class="sp-mainvisual">
+  <div class="main-visual pc-mainvisual slick01">
+    <img src="images/pc_top_mainvisual.jpg" alt="メインビジュアル">
+    <img src="images/pc_top_mainvisual-2.jpg" alt="メインビジュアル2">
+  </div>
+  <div class="main-visual sp-mainvisual slick02">
+    <img src="images/sp_top_mainvisual.jpg" alt="メインビジュアル">
   </div>
   <div class="anti-corona">
     <h3>新型コロナウイルス(COVID-19)の対策について</h3>
@@ -202,7 +206,9 @@
               <img src="icons/treatment_preventive.png" alt="予防歯科">
             </a>
           </div>
-          <h4>予防歯科</h4>
+          <a href="treatment/prevent/">
+            <h4>予防歯科</h4>
+          </a>
         </div>
         <div class="menu">
           <div class="icon-container">
@@ -210,7 +216,9 @@
               <img src="icons/treatment_pediatric.png" alt="小児歯科">
             </a>
           </div>
-          <h4>小児歯科</h4>
+          <a href="treatment/child/">
+            <h4>小児歯科</h4>
+          </a>
         </div>
         <div class="menu">
           <div class="icon-container">
@@ -218,7 +226,9 @@
               <img src="icons/treatment_ceramic.png" alt="補綴・セラミック治療">
             </a>
           </div>
-          <h4>補綴・セラミック治療</h4>
+          <a href="treatment/esthetic/">
+            <h4>補綴・セラミック治療</h4>
+          </a>
         </div>
         <div class="menu">
           <div class="icon-container">
@@ -226,7 +236,9 @@
               <img src="icons/treatment_implant.png" alt="インプラント治療">
             </a>
           </div>
-          <h4>インプラント治療</h4>
+          <a href="treatment/implant/">
+            <h4>インプラント治療</h4>
+          </a>
         </div>
         <div class="menu">
           <div class="icon-container">
@@ -234,7 +246,9 @@
               <img src="icons/treatment_decay.png" alt="虫歯治療">
             </a>
           </div>
-          <h4>虫歯治療</h4>
+          <a href="treatment/general/">
+            <h4>虫歯治療</h4>
+          </a>
         </div>
         <div class="menu">
           <div class="icon-container">
@@ -242,7 +256,9 @@
               <img src="icons/treatment_periodontal.png" alt="歯周病治療">
             </a>
           </div>
-          <h4>歯周病治療</h4>
+          <a href="treatment/perio/">
+            <h4>歯周病治療</h4>
+          </a>
         </div>
         <div class="menu">
           <div class="icon-container">
@@ -250,7 +266,9 @@
               <img src="icons/treatment_orthodontics.png" alt="矯正歯科">
             </a>
           </div>
-          <h4>矯正歯科</h4>
+          <a href="treatment/ortho/">
+            <h4>矯正歯科</h4>
+          </a>
         </div>
         <div class="menu">
           <div class="icon-container">
@@ -258,7 +276,9 @@
               <img src="icons/treatment_whitening.png" alt="ホワイトニング">
             </a>
           </div>
-          <h4>ホワイトニング</h4>
+          <a href="treatment/whitening/">
+            <h4>ホワイトニング</h4>
+          </a>
         </div>
       </div>
     </div>
@@ -432,6 +452,7 @@
     <small>Copyright &copy; 2020 医療法人社団 智正会　中川歯科クリニック All Rights Reserved.</small>
   </footer>
   <script src="js/pagetop.js" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js" data-options='{ "title": "診療予約メールの作成をします", "buttonText1": "Gmailを開く", "buttonText2": "Outlookを開く", "buttonText3": "Yahooメールを開く", "buttonText4": "デフォルトメールアプリを開く", "buttonTextCopy": "コピーする", "buttonTextCopyAction": "コピーしました"}'></script>
+  <script src="../js/slick.min.js" type="text/javascript"></script>
+  <script src="../js/common.js" type="text/javascript"></script>
 </body>
 </html>

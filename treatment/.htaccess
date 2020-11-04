@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^implant\.html$ https://www.nakagawadent.net/treatment/implant/[R=301,L]
+  RewriteRule ^perio\.html$ https://www.nakagawadent.net/treatment/perio/[R=301,L]
+  RewriteRule ^prevent\.html$ https://www.nakagawadent.net/treatment/prevent/[R=301,L]
+  RewriteRule ^ortho\.html$ https://www.nakagawadent.net/treatment/ortho/[R=301,L]
+  RewriteRule ^esthetic\.html$ https://www.nakagawadent.net/treatment/esthetic/[R=301,L]
+</IfModule>
