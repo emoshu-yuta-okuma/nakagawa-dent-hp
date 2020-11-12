@@ -118,8 +118,16 @@
     display: none;
 }
 
-/* @media screen and (max-width: 500px) {
+.slick02 {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
     .slick01 {
         display: none;
     }
-} */
+
+    .slick02 {
+        display: block;
+    }
+}
